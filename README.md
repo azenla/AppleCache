@@ -2,9 +2,6 @@
 
 This is a reverse engineering attempt of the Apple Content Caching system.
 
-Currently the locator service is implemented, but I am in the process of
-writing documentation on how the cache registration and server work.
-
 The goal of this project is to challenge myself in a serious reverse engineering
 attempt while also creating something I want to make: an Apple Content Cache that works on Linux servers.
 
