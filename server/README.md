@@ -57,7 +57,7 @@ A few things to note, the path of the request seems to be the path of the asset 
 ```text
 Cache URL: http://10.0.0.60:54439/2019FallSeed/mobileassets/061-28461/73D248DA-E92B-11E9-87BD-36A73FE00C7B/com_apple_MobileAsset_SoftwareUpdateDocumentation/a080e3173e75180afa7ea1a15f469ed839f60260.zip?source=updates-http.cdn-apple.com
 
-Source URL: http://updates-http.cdn-apple.com:443/2019FallSeed/mobileassets/061-28461/73D248DA-E92B-11E9-87BD-36A73FE00C7B/com_apple_MobileAsset_SoftwareUpdateDocumentation/a080e3173e75180afa7ea1a15f469ed839f60260.zip
+Source URL: http://updates-http.cdn-apple.com/2019FallSeed/mobileassets/061-28461/73D248DA-E92B-11E9-87BD-36A73FE00C7B/com_apple_MobileAsset_SoftwareUpdateDocumentation/a080e3173e75180afa7ea1a15f469ed839f60260.zip
 ```
 
 The cache server should then download the URL if it is not in the cache, and stream the results while downloading.

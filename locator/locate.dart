@@ -4,16 +4,13 @@ import 'dart:io';
 
 Future<void> main(List<String> args) async {
   var client = new HttpClient();
-  var request = await client.postUrl(Uri.parse("https://lcdn-locator.apple.com/lcdn/locate"));
+  var request = await client
+      .postUrl(Uri.parse("https://lcdn-locator.apple.com/lcdn/locate"));
   request.writeln(json.encode({
     "ranked-results": true,
     "locator-tag": "#f5cfd4d0",
-    "local-addresses": [
-      args[0]
-    ],
-    "public-address-ranges": [
-      []
-    ],
+    "local-addresses": [args[0]],
+    "public-address-ranges": [[]],
     "locator-software": [
       {
         "build": "19A578c",
