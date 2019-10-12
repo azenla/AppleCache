@@ -8,6 +8,21 @@ writing documentation on how the cache registration and server work.
 The goal of this project is to challenge myself in a serious reverse engineering
 attempt while also creating something I want to make: an Apple Content Cache that works on Linux servers.
 
+## A Note to Apple
+
+```text
+Dear Apple,
+
+I am a good faith actor and due to the design of cache, I do not believe this should cause any harm. Should you consider otherwise, contact me via my email: kaendfinger@gmail.com
+
+Thanks,
+Kenneth
+```
+
+## A Note to Users
+
+Please do not abuse the content you see here. I am trying to do this in good faith and do not condone any malicious use of the Apple Content Cache system, whatever that may be.
+
 ## Content Caching
 
 Content Caching is available in the Sharing section of System Preferences.
@@ -18,6 +33,7 @@ of the work. It has an HTTP server that has an API that allows fetching and uplo
 ## Research
 
 * [Locator Service](locator/README.md)
+* [Cache Server API](server/README.md)
 
 ## Methodology
 
