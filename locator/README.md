@@ -12,9 +12,9 @@ The request JSON to locate all the caches is:
 ```json
 {
     "ranked-results": true,
-    "locator-tag": "#f5cfd4d0", // Seems to be different each time.
+    "locator-tag": "#f5cfd4d0",
     "local-addresses": [
-      "10.0.0.60" // My local address.
+      "10.0.0.60"
     ],
     "public-address-ranges": [
       []
@@ -36,6 +36,9 @@ The request JSON to locate all the caches is:
     ]
 }
 ```
+
+The most important thing is the request is the local-addresses array,
+which should be the address of the requesting machine.
 
 The response looks similar to:
 
