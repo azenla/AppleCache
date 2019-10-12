@@ -63,3 +63,13 @@ Source URL: http://updates-http.cdn-apple.com/2019FallSeed/mobileassets/061-2846
 The cache server should then download the URL if it is not in the cache, and stream the results while downloading.
 
 All in all, it seems like a really interesting caching API. More to come soon.
+
+## Configuration Plist
+
+The configuration plist which provides a lot of metadata about the caching process (such as whitelists, type mappings, and apparently public keys for iCloud data) is provided at the following URL:
+
+```text
+Configuration URL: http://suconfig.apple.com/resource/registration/v1/config.plist
+```
+
+The script in this directory (a [Dart](https://dart.dev/) script) called `download-config.dart` provides an example of decoding the plist part. A common occurence in the caching API is the use of this "signed plist" (unoffical name created by me) that appears to have a Apple signature around it.

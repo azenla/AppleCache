@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificateURL</key>
+	<string>https://lcdn-registration.apple.com/resource/cert.cer</string>
+	<key>establishmentURL</key>
+	<string>https://lcdn-registration.apple.com/lcdn/session</string>
+	<key>registrationURL</key>
+	<string>https://lcdn-registration.apple.com/lcdn/register</string>
+	<key>deregistrationURL</key>
+	<string>https://lcdn-registration.apple.com/lcdn/deregister</string>
+	<key>blackListURL</key>
+	<string>http://suconfig.apple.com/resource/registration/v1/blacklist.plist</string>
+	<key>statisticsURL</key>
+	<string>https://xp-cdn.apple.com/report/2/xp_cdn_receipt</string>
+	<key>whiteListedHosts</key>
+	<array>
+		<string>swcdn.apple.com:80</string>
+		<string>validation.isu.apple.com:80</string>
+		<string>appldnld.apple.com:80</string>
+		<string>oscdn.apple.com:80</string>
+		<string>swdist.apple.com:443</string>
+		<string>swdownload.apple.com:80</string>
+		<string>swdownload.apple.com:443</string>
+		<string>audiocontentdownload.apple.com:80</string>
+		<string>audiocontentdownload.apple.com:443</string>
+		<string>deimos.apple.com:80</string>
+		<string>deimos3.apple.com:80</string>
+		<string>basejumper.apple.com:80</string>
+		<string>basejumper.apple.com:443</string>
+		<string>playgrounds-assets-cdn.apple.com:443</string>
+		<string>playgrounds-cdn.apple.com:443</string>
+		<string>updates.cdn-apple.com:443</string>
+		<string>updates-http.cdn-apple.com:80</string>
+		<string>sylvan.apple.com:80</string>
+		<string>sylvan.apple.com:443</string>
+		<string>devimages-cdn.apple.com:80</string>
+		<string>devimages-cdn.apple.com:443</string>
+		<string>download.developer.apple.com:80</string>
+		<string>download.developer.apple.com:443</string>
+	</array>
+	<key>whiteListedDomains</key>
+	<array>
+		<string>phobos.apple.com:80</string>
+		<string>itunes.apple.com:80</string>
+		<string>itunes.apple.com:443</string>
+		<string>assets.itunes.com:80</string>
+		<string>assets.itunes.com:443</string>
+	</array>
+	<key>assetTypeMap</key>
+	<array>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>swdist.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>swdist</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>swdownload.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>swdownload</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>swcdn.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>swcdn</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>oscdn.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>oscdn</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>validation.isu.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>validation</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>appldnld.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>appldnld</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>basejumper.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>basejumper</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>playgrounds-assets-cdn.apple.com</string>
+				<string>playgrounds-cdn.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>playgrounds</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>sylvan.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>sylvan</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>devimages-cdn.apple.com</string>
+				<string>download.developer.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>dev</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>audiocontentdownload.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>gbnd</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>odr.assets.itunes.com</string>
+				<string>odr.itunes.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>odr</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>p1-u.itunes.apple.com</string>
+				<string>p2-u.itunes.apple.com</string>
+				<string>deimos.apple.com</string>
+				<string>deimos3.apple.com</string>
+				<string>itunesu.assets.itunes.com</string>
+				<string>itunesu.itunes.apple.com</string>
+				<string>itunesu-assets.itunes.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>itunesu</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>*.phobos.apple.com</string>
+				<string>*.v.phobos.apple.com</string>
+				<string>*.assets.itunes.com</string>
+				<string>books.itunes.apple.com</string>
+				<string>iosapps.itunes.apple.com</string>
+				<string>osxapps.itunes.apple.com</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>path</key>
+					<array>
+						<string>/*/Purple*/*.zip</string>
+						<string>/*/Purple*/*.pkg</string>
+						<string>/*/Purple*/*.ipa</string>
+					</array>
+					<key>type</key>
+					<string>Apps</string>
+				</dict>
+				<dict>
+					<key>path</key>
+					<array>
+						<string>/*/Publication*/*</string>
+					</array>
+					<key>type</key>
+					<string>iBooks</string>
+				</dict>
+				<dict>
+					<key>path</key>
+					<array>
+						<string>/*/Video/*f.m4v</string>
+						<string>/*/Video/*f.mov</string>
+					</array>
+					<key>type</key>
+					<string>Movies</string>
+				</dict>
+				<dict>
+					<key>path</key>
+					<array>
+						<string>/*/Features/*.m4p</string>
+						<string>/*/Features/*.m4a</string>
+						<string>/*/Features/*.mp4</string>
+						<string>/*/Music/*.m4p</string>
+						<string>/*/Music/*.m4a</string>
+						<string>/*/Music/*.mp4</string>
+					</array>
+					<key>type</key>
+					<string>Songs</string>
+				</dict>
+				<dict>
+					<key>path</key>
+					<array>
+						<string>/*/Cobalt*</string>
+					</array>
+					<key>type</key>
+					<string>itunesu</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>host</key>
+			<array>
+				<string>*</string>
+			</array>
+			<key>map</key>
+			<array>
+				<dict>
+					<key>type</key>
+					<string>icloud</string>
+					<key>namespace</key>
+					<array>
+						<string>icloud</string>
+					</array>
+					<key>path</key>
+					<array>
+						<string>n/a</string>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>mediaTypeMap</key>
+	<array>
+		<dict>
+			<key>namespace</key>
+			<array>
+				<string>icloud</string>
+			</array>
+			<key>path</key>
+			<array>
+				<string>n/a</string>
+			</array>
+			<key>type</key>
+			<string>iCloud</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>/*/Cobalt*</string>
+				<string>/WebObjects/Core.woa/Download*</string>
+				<string>/WebObjects/Core.woa/Feed*</string>
+				<string>/WebObjects/Core.woa/Subscription*</string>
+			</array>
+			<key>type</key>
+			<string>iTunes U</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>*.epub</string>
+				<string>*.ibooks</string>
+			</array>
+			<key>type</key>
+			<string>Books</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>*[aA]pple[tT][vV]*</string>
+				<string>*tv[oO][sS]*</string>
+				<string>*/Videos/*.[mM][oO][vV]</string>
+			</array>
+			<key>type</key>
+			<string>Apple TV Software</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>*.ipa</string>
+				<string>*.ipd</string>
+				<string>*.ipsw</string>
+				<string>*.assetpack</string>
+				<string>/ios*</string>
+				<string>/iOS*</string>
+			</array>
+			<key>type</key>
+			<string>iOS Software</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>*.pkg</string>
+				<string>*.dmg</string>
+			</array>
+			<key>type</key>
+			<string>Mac Software</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>*.m4v</string>
+				<string>*.mov</string>
+			</array>
+			<key>type</key>
+			<string>Movies</string>
+		</dict>
+		<dict>
+			<key>path</key>
+			<array>
+				<string>*.m4p</string>
+				<string>*.m4a</string>
+				<string>*.mp4</string>
+			</array>
+			<key>type</key>
+			<string>Music</string>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>Other</string>
+		</dict>
+	</array>
+	<key>mediaTypeOrder</key>
+	<array>
+		<string>Mac Software</string>
+		<string>iOS Software</string>
+		<string>Apple TV Software</string>
+		<string>iCloud</string>
+		<string>Books</string>
+		<string>iTunes U</string>
+		<string>Movies</string>
+		<string>Music</string>
+		<string>Other</string>
+	</array>
+	<key>mediaTypeStrings</key>
+	<dict>
+		<key>de</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV-Software</string>
+			<key>Books</key>
+			<string>Bücher</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS-Software</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac-Software</string>
+			<key>Movies</key>
+			<string>Filme</string>
+			<key>Music</key>
+			<string>Musik</string>
+			<key>Other</key>
+			<string>Anderes</string>
+		</dict>
+		<key>en</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV Software</string>
+			<key>Books</key>
+			<string>Books</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS Software</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac Software</string>
+			<key>Movies</key>
+			<string>Movies</string>
+			<key>Music</key>
+			<string>Music</string>
+			<key>Other</key>
+			<string>Other</string>
+		</dict>
+		<key>es</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Software Apple TV</string>
+			<key>Books</key>
+			<string>Libros</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>Software iOS</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Software Mac</string>
+			<key>Movies</key>
+			<string>Películas</string>
+			<key>Music</key>
+			<string>Música</string>
+			<key>Other</key>
+			<string>Otros</string>
+		</dict>
+		<key>fr</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Logiciels Apple TV</string>
+			<key>Books</key>
+			<string>Livres</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>Logiciels iOS</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Logiciels Mac</string>
+			<key>Movies</key>
+			<string>Films</string>
+			<key>Music</key>
+			<string>Musique</string>
+			<key>Other</key>
+			<string>Autres</string>
+		</dict>
+		<key>it</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Software Apple TV</string>
+			<key>Books</key>
+			<string>Libri</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>Software iOS</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Software Mac</string>
+			<key>Movies</key>
+			<string>Film</string>
+			<key>Music</key>
+			<string>Musica</string>
+			<key>Other</key>
+			<string>Altro</string>
+		</dict>
+		<key>ja</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV ソフトウェア</string>
+			<key>Books</key>
+			<string>ブック</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS ソフトウェア</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac ソフトウェア</string>
+			<key>Movies</key>
+			<string>ムービー</string>
+			<key>Music</key>
+			<string>ミュージック</string>
+			<key>Other</key>
+			<string>その他</string>
+		</dict>
+		<key>ko</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 소프트웨어</string>
+			<key>Books</key>
+			<string>책</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 소프트웨어</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 소프트웨어</string>
+			<key>Movies</key>
+			<string>동영상</string>
+			<key>Music</key>
+			<string>음악</string>
+			<key>Other</key>
+			<string>기타</string>
+		</dict>
+		<key>nl</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV-software</string>
+			<key>Books</key>
+			<string>Boeken</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS-software</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac-software</string>
+			<key>Movies</key>
+			<string>Films</string>
+			<key>Music</key>
+			<string>Muziek</string>
+			<key>Other</key>
+			<string>Overig</string>
+		</dict>
+		<key>zh_CN</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 软件</string>
+			<key>Books</key>
+			<string>图书</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 软件</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 软件</string>
+			<key>Movies</key>
+			<string>影片</string>
+			<key>Music</key>
+			<string>音乐</string>
+			<key>Other</key>
+			<string>其他</string>
+		</dict>
+		<key>zh-CN</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 软件</string>
+			<key>Books</key>
+			<string>图书</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 软件</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 软件</string>
+			<key>Movies</key>
+			<string>影片</string>
+			<key>Music</key>
+			<string>音乐</string>
+			<key>Other</key>
+			<string>其他</string>
+		</dict>
+		<key>zh-Hans</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 软件</string>
+			<key>Books</key>
+			<string>图书</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 软件</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 软件</string>
+			<key>Movies</key>
+			<string>影片</string>
+			<key>Music</key>
+			<string>音乐</string>
+			<key>Other</key>
+			<string>其他</string>
+		</dict>
+		<key>zh_TW</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 軟體</string>
+			<key>Books</key>
+			<string>書籍</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 軟體</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 軟體</string>
+			<key>Movies</key>
+			<string>影片</string>
+			<key>Music</key>
+			<string>音樂</string>
+			<key>Other</key>
+			<string>其他</string>
+		</dict>
+		<key>zh-TW</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 軟體</string>
+			<key>Books</key>
+			<string>書籍</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 軟體</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 軟體</string>
+			<key>Movies</key>
+			<string>影片</string>
+			<key>Music</key>
+			<string>音樂</string>
+			<key>Other</key>
+			<string>其他</string>
+		</dict>
+		<key>zh-Hant</key>
+		<dict>
+			<key>Apple TV Software</key>
+			<string>Apple TV 軟體</string>
+			<key>Books</key>
+			<string>書籍</string>
+			<key>iCloud</key>
+			<string>iCloud</string>
+			<key>iOS Software</key>
+			<string>iOS 軟體</string>
+			<key>iTunes U</key>
+			<string>iTunes U</string>
+			<key>Mac Software</key>
+			<string>Mac 軟體</string>
+			<key>Movies</key>
+			<string>影片</string>
+			<key>Music</key>
+			<string>音樂</string>
+			<key>Other</key>
+			<string>其他</string>
+		</dict>
+	</dict>
+	<key>assetNamespaces</key>
+	<array>
+		<string>icloud</string>
+	</array>
+	<key>pushTopic</key>
+	<string>com.apple.assetcache</string>
+	<key>icloudSignatureHeader</key>
+	<string>X-Apple-Cache-iCloud</string>
+	<key>icloudSignatureKeys</key>
+	<array>
+		<dict>
+			<key>version</key>
+			<string>1</string>
+			<key>publicKeys</key>
+			<array>
+				<data>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEgXMKqRYg99MW2n2YD4b/lfxLp9Tpi1z631rHgHwBAGB//5OkpKUqRzQ4gGb3CH8muG2ucCW2m2BAO+vU3l4sIw==</data>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
