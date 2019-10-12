@@ -27,50 +27,39 @@ Content-Length: 0
 A sample download flow is (taken from an iPhone downloading Skate City on Apple Arcade):
 
 ```http
-GET /itunes-assets/Purple113/v4/8e/ce/1d/8ece1d03-212c-0cd1-c1ec-00e5d2f38152/pre-thinned16169977081049726707.thinned.signed.dpkg.ipa?accessKey=LONG_ACCESS_TOKEN_HERE&source=iosapps.itunes.apple.com HTTP/1.1
+GET /2019FallSeed/mobileassets/061-28461/73D248DA-E92B-11E9-87BD-36A73FE00C7B/com_apple_MobileAsset_SoftwareUpdateDocumentation/a080e3173e75180afa7ea1a15f469ed839f60260.zip?source=updates-http.cdn-apple.com HTTP/1.1
 Host: 10.0.0.60:54459
-Apple-Download-Type: redownload
 Accept: */*
-User-Agent: appstored/1 CFNetwork/1115 Darwin/19.0.0
 Accept-Language: en-us
-Accept-Encoding: gzip, deflate
 Connection: keep-alive
+Accept-Encoding: gzip, deflate
+User-Agent: nsurlsessiond/1115 CFNetwork/1115 Darwin/19.0.0
 
 HTTP/1.1 200 OK
-Age: 618151
-X-Apple-MS-Content-Length: 285978974
-Access-control-allow-methods: HEAD, GET, PUT
+X-Apple-Cached-Ranges: D885102C-110C-49BD-8672-7EF84A49C9AA bytes=0-732588
+Via: http/1.1 usscz2-edge-bx-018.ts.apple.com (ApacheTrafficServer/8.0.5)
 Server: ATS/8.0.5
-Cache-Control: private
-Strict-Transport-Security: max-age=31536000; includeSubDomains;
-X-Apple-Cached-Ranges: D885102C-110C-49BD-8672-7EF84A49C9AA bytes=0-154236588
-X-iCloud-Content-Length: 285978974
-Accept-Ranges: bytes
-Access-Control-Allow-Origin: *
-X-Responding-Server: massilia_protocol_035:735003803:ms11p01if-qufw20163201.ms.if.apple.com:8082:19T4:nocommit
-Access-control-allow-headers: range
-Content-Length: 285978974
-Via: http/1.1 ussjc2-vp-vst-008.ts.apple.com (ApacheTrafficServer/8.0.5), https/1.1 ussjc2-vp-vfe-008.ts.apple.com (ApacheTrafficServer/8.0.5), http/1.1 usscz2-edge-lx-002.ts.apple.com (ApacheTrafficServer/8.0.5), http/1.1 usscz2-edge-bx-042.ts.apple.com (ApacheTrafficServer/8.0.5)
-Date: Sat, 05 Oct 2019 04:17:18 GMT
-X-DLB-Upstream: 10.117.108.197:8082
-x-icloud-versionid: 7cfb0240-e4b1-11e9-a9f3-d8c497a3592d
+X-Apple-Cache-Session: ndEDkMdIUkiv
+CDNUUID: 64c7e0da-fa45-4fa1-bc6b-55d04acb9c21-986340707
+Date: Sat, 12 Oct 2019 08:39:36 GMT
+Cache-Control: max-age=31536000
+Content-Length: 732589
 Connection: close
-Access-Control-Expose-Headers: *
-X-Apple-Cache-Session: SZOOPklKmDIW
-X-Apple-Request-UUID: cc5994da-d626-4a31-be5f-bc3c8ac905e4, cc5994da-d626-4a31-be5f-bc3c8ac905e4
-Access-control-max-age: 3000
-CDNUUID: 18fac378-7a8d-496d-9c22-1d09eeb6b56b-990994976
-Content-Type: application/octet-stream
-X-Cache: miss, hit-fresh, miss, hit-fresh
-Access-control-allow-credentials: false
-Last-Modified: Wed, 02 Oct 2019 01:10:56 GMT
-Etag: "04E6B949F0F06043F454792436ACF09D-3"
+Etag: "bcb052bdb592142336fa33e674dca44b"
+Accept-Ranges: bytes
+X-Cache: hit-fresh
 ```
 
-It seems that the hostname is in the `source` query parameter, and the access key is somehow passed along (I have yet to figure out the end result URL that the cache server primes it's cache with).
+It seems that the hostname is in the `source` query parameter.
 
-A few things to note, the path of the request seems to be the path of the asset on the source, I haven't quite figured out how that works yet, as it seems like an odd choice.
+A few things to note, the path of the request seems to be the path of the asset on the source. To reconstruct the URL, retain all query parameters except for `source`, and use the hostname in the `source` query parameter. For example:
 
-The actual download protocol is still in the works, but it seems as though the client can download while the server is also caching something. Also, note the availability of range requests, which means the client can request ranges of bytes from the request.
+```text
+Cache URL: http://10.0.0.60:54439/2019FallSeed/mobileassets/061-28461/73D248DA-E92B-11E9-87BD-36A73FE00C7B/com_apple_MobileAsset_SoftwareUpdateDocumentation/a080e3173e75180afa7ea1a15f469ed839f60260.zip?source=updates-http.cdn-apple.com
+
+Source URL: http://updates-http.cdn-apple.com:443/2019FallSeed/mobileassets/061-28461/73D248DA-E92B-11E9-87BD-36A73FE00C7B/com_apple_MobileAsset_SoftwareUpdateDocumentation/a080e3173e75180afa7ea1a15f469ed839f60260.zip
+```
+
+The cache server should then download the URL if it is not in the cache, and stream the results while downloading.
 
 All in all, it seems like a really interesting caching API. More to come soon.
