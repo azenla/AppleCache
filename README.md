@@ -10,14 +10,12 @@ attempt while also creating something I want to make: an Apple Content Cache tha
 
 ## A Note to Apple
 
-```text
 Dear Apple,
 
 I am a good faith actor and due to the design of cache, I do not believe this should cause any harm. Should you consider otherwise, contact me via my email: kaendfinger@gmail.com
 
 Thanks,
 Kenneth
-```
 
 ## A Note to Users
 
