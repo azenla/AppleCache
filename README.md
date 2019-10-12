@@ -33,6 +33,8 @@ of the work. It has an HTTP server that has an API that allows fetching and uplo
 * [Locator Service](locator/README.md)
 * [Cache Server API](server/README.md)
 
+Additionally, packet captures are provided in the `captures` directory.
+
 ## Methodology
 
 The work here was done by using [Charles Proxy](https://www.charlesproxy.com/) and [Frida](https://www.frida.re/).
