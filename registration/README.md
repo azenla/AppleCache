@@ -3,9 +3,7 @@
 Cache registration is the process that is typically necessary
 for Apple devices to use the cache.
 
-Unfortunately, the request that registers the cache seems to be "signed".
-
-I did however figure out that the length of the signed payload is a Big Endian 32-bit integer before the payload. Still working out the signature format.
+Unfortunately, the request that registers the cache seems to be signed.
 
 ```text
 Registration URL: https://lcdn-registration.apple.com/lcdn/register

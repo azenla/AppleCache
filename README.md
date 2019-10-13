@@ -27,6 +27,7 @@ of the work. It has an HTTP server that has an API that allows fetching and uplo
 
 ## Research
 
+* [Signature](signature/README.md)
 * [Locator Service](locator/README.md)
 * [Cache Server API](server/README.md)
 
