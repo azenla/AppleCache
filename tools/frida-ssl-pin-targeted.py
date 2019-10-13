@@ -44,7 +44,10 @@ class Application(object):
         print("✔ load()")
         script.load()
         print("✔ resume(pid={})".format(pid))
-        self._device.resume(pid)
+        try:
+            self._device.resume(pid)
+        except Exception as e:
+            print(e)
         self._sessions.add(session)
 
     def _on_child_added(self, child):
