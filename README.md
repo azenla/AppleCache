@@ -38,3 +38,8 @@ The work here was done by using [Charles Proxy](https://www.charlesproxy.com/) a
 
 The `tools/frida-ssl-pin.js` file is a Frida script that can attach to any macOS process and disable all SSL verification and SSL certificate pinning. This has allowed me to deeply examine the requests going to Apple's servers. This script is likely useful
 for many other use cases. If anyone else uses it, I'd love to hear about how it was used (I'm a super huge nerd and am quite interested in reverse engineering).
+Note that SIP will need to be disabled in order to correctly use it.
+
+I also have a modified Frida Python script which targets `AssetCache` directly.
+Since `AssetCache` is spawned by launchd, you can attach Frida to launchd, and wait
+spawn `AssetCache` via the service.

@@ -48,8 +48,6 @@ class Application(object):
         self._sessions.add(session)
 
     def _on_child_added(self, child):
-        if child.path != '/usr/libexec/AssetCache':
-            return
         print("⚡ child_added: {}".format(child))
         self._instrument(child.pid)
 
