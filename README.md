@@ -40,6 +40,6 @@ The `tools/frida-ssl-pin.js` file is a Frida script that can attach to any macOS
 for many other use cases. If anyone else uses it, I'd love to hear about how it was used (I'm a super huge nerd and am quite interested in reverse engineering).
 Note that SIP will need to be disabled in order to correctly use it.
 
-I also have a modified Frida Python script which targets `AssetCache` directly.
+I also have a modified Frida Python script which targets `launchd` to inject the SSL pinning and verification disable script.
 Since `AssetCache` is spawned by launchd, you can attach Frida to launchd, and wait
-spawn `AssetCache` via the service.
+spawn `AssetCache` via the service. The script is located at: `tools/frida-ssl-pin-target.py`, just do `pip3 install frida frida-tools` and run the script.
