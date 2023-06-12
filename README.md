@@ -5,16 +5,16 @@ This is a reverse engineering attempt of the Apple Content Caching system.
 The goal of this project is to challenge myself in a serious reverse engineering
 attempt while also creating something I want to make: an Apple Content Cache that works on Linux servers.
 
-**NOTE**: [AssetCacheTool](https://github.com/kendfinger/AssetCacheTool) is a continuation of some of this work.
+**NOTE**: [asset-cache-tool](https://github.com/GayPizzaSpecifications/asset-cache-tool) is a continuation of some of this work.
 
 ## A Note to Apple
 
 Dear Apple,
 
-I am a good faith actor and due to the design of cache, I do not believe this should cause any harm. Should you consider otherwise, contact me via my email: kaendfinger@gmail.com
+I am a good faith actor and due to the design of cache, I do not believe this should cause any harm. Should you consider otherwise, contact me via my email: alex@fork.run
 
 Thanks,
-Kenneth
+Alex
 
 ## A Note to Users
 
